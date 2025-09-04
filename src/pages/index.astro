@@ -1,0 +1,238 @@
+---
+import Layout from '../components/Layout.astro';
+import ServiceCard from '../components/ServiceCard.astro';
+import ContactForm from '../components/ContactForm.astro';
+---
+
+<Layout 
+  title="Modern Székhelyszolgáltatás Budapesti Vállalkozóknak"
+  description="Digitális székhelyszolgáltatás a 21. században. Gyors, hatékony, költségkímélő megoldások startup-oknak és kisvállalkozásoknak."
+  keywords="székhelyszolgáltatás budapest, székhelyszolgáltatás 5. kerület, megbízható székhelyszolgáltató, postakezelés, címszolgáltatás"
+>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <h1>Modern Székhelyszolgáltatás a Digitális Korban</h1>
+      <p>Költséghatékony, rugalmas megoldások startup-oknak és online vállalkozásoknak</p>
+      <div class="hero-actions">
+        <a href="https://szekhelyszolgalat.net/index.html#content4-26" class="btn btn-primary" target="_blank">
+          Szerződés kötése online
+        </a>
+        <a href="/kapcsolat" class="btn btn-secondary">
+          Digitális megoldások
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trust Signals -->
+  <section class="section">
+    <div class="container">
+      <div class="trust-signals" style="text-align: center; margin-bottom: 3rem;">
+        <span class="trust-badge">🚀 Startup-barát</span>
+        <span class="trust-badge">💻 Digitális első</span>
+        <span class="trust-badge">⚡ 24h aktiválás</span>
+        <span class="trust-badge">💰 Költséghatékony</span>
+        <span class="trust-badge">🔄 Rugalmas szerződés</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="section section-light">
+    <div class="container">
+      <h2 style="text-align: center; margin-bottom: 3rem;">Digitális Megoldásaink</h2>
+      <div class="grid grid-2">
+        <ServiceCard
+          title="💻 Digital Starter"
+          features={[
+            "Online székhelycím aktiválása",
+            "Automatikus e-mail értesítések",
+            "Digitális dokumentum kezelés",
+            "24/7 online ügyfélportál",
+            "Startup-optimalizált folyamatok"
+          ]}
+        />
+        <ServiceCard
+          title="🚀 Business Pro"
+          features={[
+            "Minden Digital Starter funkció",
+            "Azonnali dokumentum szkennelés",
+            "Mobilapp hozzáférés",
+            "Automatikus kategorizálás",
+            "Integrációk (Slack, Teams, stb.)",
+            "Prioritás támogatás"
+          ]}
+          highlight={true}
+        />
+        <ServiceCard
+          title="⚡ Scale-up Elite"
+          features={[
+            "Minden Business Pro funkció",
+            "AI-alapú dokumentum feldolgozás",
+            "Személyre szabott workflow-k",
+            "Dedikált ügyfélmenedzser",
+            "Compliance monitoring",
+            "Custom integrációk"
+          ]}
+        />
+        <ServiceCard
+          title="🏢 Enterprise Max"
+          features={[
+            "Minden Scale-up Elite funkció",
+            "White-label megoldások",
+            "API hozzáférés",
+            "Több telephely támogatás",
+            "SLA garanciák",
+            "24/7 telefon támogatás"
+          ]}
+        />
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us -->
+  <section class="section">
+    <div class="container">
+      <div class="grid grid-2" style="align-items: center;">
+        <div>
+          <h2>Miért a Székhely-Szolgálat a legjobb startup-oknak?</h2>
+          <div class="benefits-list">
+            <div class="benefit-item">
+              <h4>🚀 Gyors startup aktiválás</h4>
+              <p>Már 24 órán belül használhatja új budapesti címét. Nincs hosszas papírmunka vagy várakozás.</p>
+            </div>
+            <div class="benefit-item">
+              <h4>💻 Digitális első megközelítés</h4>
+              <p>Minden dokumentum azonnal elérhető online portálunkon. Mobilapp, API integráció, automatizált workflow-k.</p>
+            </div>
+            <div class="benefit-item">
+              <h4>💰 Startup-barát árazás</h4>
+              <p>Rugalmas fizetési lehetőségek, kedvezmények early-stage startupoknak. Növekedéssel együtt skálázható csomagok.</p>
+            </div>
+            <div class="benefit-item">
+              <h4>🤖 AI-támogatott folyamatok</h4>
+              <p>Automatikus dokumentum kategorizálás, intelligens értesítések, prediktív elemzések a jobb döntésekhez.</p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="stats-card">
+            <h3 style="text-align: center; color: var(--primary-blue);">Számok, amik beszélnek</h3>
+            <div class="stats-grid">
+              <div class="stat">
+                <div class="stat-number">10</div>
+                <div class="stat-label">év tapasztalat</div>
+              </div>
+              <div class="stat">
+                <div class="stat-number">500+</div>
+                <div class="stat-label">elégedett ügyfél</div>
+              </div>
+              <div class="stat">
+                <div class="stat-number">24</div>
+                <div class="stat-label">órán belül válasz</div>
+              </div>
+              <div class="stat">
+                <div class="stat-number">99%</div>
+                <div class="stat-label">ügyfél elégedettség</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Location Benefits -->
+  <section class="section section-light">
+    <div class="container">
+      <h2 style="text-align: center; margin-bottom: 3rem;">Budapest V. kerület előnyei</h2>
+      <div class="grid grid-3">
+        <div class="card">
+          <h4>🏛️ Központi elhelyezkedés</h4>
+          <p>A belváros szívében, könnyen megközelíthető helyen található irodánk minden hivatalos ügyintézéshez ideális.</p>
+        </div>
+        <div class="card">
+          <h4>🎯 Alacsony ellenőrzési kockázat</h4>
+          <p>A NAV statisztikái szerint a V. kerületi székhelyek ritkábban kerülnek ellenőrzésre.</p>
+        </div>
+        <div class="card">
+          <h4>🚀 Presztízs és megbízhatóság</h4>
+          <p>A budapesti belváros címe megbízhatóságot és stabilitást sugall üzleti partnerei felé.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Form -->
+  <ContactForm />
+
+  <!-- Final CTA -->
+  <section class="section" style="background: var(--primary-blue); color: white; text-align: center;">
+    <div class="container">
+      <h2 style="color: white; margin-bottom: 1rem;">Kezdje el még ma!</h2>
+      <p style="font-size: 1.2rem; margin-bottom: 2rem;">
+        Csatlakozzon több mint 500 elégedett ügyfélünkhöz
+      </p>
+      <a href="https://szekhelyszolgalat.net/index.html#content4-26" class="btn" style="background: white; color: var(--primary-blue); font-weight: 700;" target="_blank">
+        Online szerződéskötés
+      </a>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .hero-actions {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+
+  .benefit-item {
+    margin-bottom: 2rem;
+  }
+
+  .benefit-item h4 {
+    margin-bottom: 0.5rem;
+    color: var(--primary-blue);
+  }
+
+  .stats-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  }
+
+  .stats-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+
+  .stat {
+    text-align: center;
+  }
+
+  .stat-number {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--primary-blue);
+    line-height: 1;
+  }
+
+  .stat-label {
+    font-size: 0.9rem;
+    color: var(--text-light);
+    margin-top: 0.5rem;
+  }
+
+  @media (max-width: 768px) {
+    .hero-actions {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+</style>

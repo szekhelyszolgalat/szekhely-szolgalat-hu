@@ -1,0 +1,431 @@
+---
+import Layout from '../components/Layout.astro';
+import ContactForm from '../components/ContactForm.astro';
+---
+
+<Layout 
+  title="Kapcsolat - SzékhelySzolgálat Budapest"
+  description="Vegye fel velünk a kapcsolatot! Telefon: +36 70 397 1095, E-mail: titkarsag@szekhelyszolgalat.net. Irodánk: 1054 Budapest, Honvéd utca 8."
+  keywords="székhelyszolgáltatás kapcsolat, budapest iroda elérhetőség, székhelyszolgáltató telefonszám, v kerület iroda"
+>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <h1>Kapcsolat</h1>
+      <p>Vegye fel velünk a kapcsolatot bármilyen kérdéssel!</p>
+    </div>
+  </section>
+
+  <!-- Contact Information -->
+  <section class="section">
+    <div class="container">
+      <div class="grid grid-2" style="align-items: start;">
+        <!-- Contact Details -->
+        <div class="contact-details">
+          <h2>Elérhetőségek</h2>
+          
+          <div class="contact-item">
+            <div class="contact-item-icon">📞</div>
+            <div class="contact-item-content">
+              <h4>Telefonszám</h4>
+              <p><a href="tel:+36703971095">+36 70 397 1095</a></p>
+              <small>Hétfő - Péntek: 09:00 - 14:30</small>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-item-icon">✉️</div>
+            <div class="contact-item-content">
+              <h4>E-mail cím</h4>
+              <p><a href="mailto:titkarsag@szekhelyszolgalat.net">titkarsag@szekhelyszolgalat.net</a></p>
+              <small>24 órán belül válaszolunk</small>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-item-icon">📍</div>
+            <div class="contact-item-content">
+              <h4>Irodacím</h4>
+              <p>
+                1054 Budapest<br>
+                Honvéd utca 8., 1. emelet 2.
+              </p>
+              <small>Személyes egyeztetés előzetes bejelentkezéssel</small>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-item-icon">🏢</div>
+            <div class="contact-item-content">
+              <h4>Céginformációk</h4>
+              <p>
+                <strong>SzékhelySzolgálat.Net Kft.</strong><br>
+                Adószám: 22926081-2-41<br>
+                Cégjegyzékszám: 01-09-180175
+              </p>
+            </div>
+          </div>
+
+          <!-- Quick Actions -->
+          <div class="quick-actions">
+            <h3>Gyors műveletek</h3>
+            <div class="action-buttons">
+              <a href="https://szekhelyszolgalat.net/index.html#content4-26" class="btn btn-primary" target="_blank">
+                Online szerződéskötés
+              </a>
+              <a href="https://szekhelyszolgalat.net/arak-csomagok" class="btn btn-secondary" target="_blank">
+                Árak megtekintése
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Map and Location Info -->
+        <div class="location-info">
+          <h3>Megközelítés</h3>
+          <div class="location-card">
+            <div class="map-placeholder">
+              <h4>📍 1054 Budapest, Honvéd utca 8.</h4>
+              <p style="margin-top: 1rem; font-style: italic;">
+                V. kerület, Lipótváros szívében
+              </p>
+            </div>
+            
+            <div class="transport-info">
+              <h4>Tömegközlekedés</h4>
+              <div class="transport-options">
+                <div class="transport-item">
+                  <span class="transport-icon">🚇</span>
+                  <div>
+                    <strong>Metro:</strong> M1 Arany János utca (5 perc gyalog)<br>
+                    <strong>Metro:</strong> M3 Kossuth tér (2 perc gyalog)
+                  </div>
+                </div>
+                <div class="transport-item">
+                  <span class="transport-icon">🚌</span>
+                  <div>
+                    <strong>Busz:</strong> 15, 115 - Arany János u.<br>
+                    <strong>Busz:</strong> 16, 105 - Szent István körút
+                  </div>
+                </div>
+                <div class="transport-item">
+                  <span class="transport-icon">🚊</span>
+                  <div>
+                    <strong>Villamos:</strong> 2 - Kossuth tér<br>
+                    <strong>Villamos:</strong> 47, 49 - Deák Ferenc tér
+                  </div>
+                </div>
+              </div>
+              
+              <div class="parking-info">
+                <h4>Parkolás</h4>
+                <p>
+                  <strong>Fizetős parkolás</strong> a környéken (zóna díjas)<br>
+                  <strong>Parkolóházak:</strong> Szabadság tér, Arany János utca
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Form Section -->
+  <ContactForm />
+
+  <!-- Additional Information -->
+  <section class="section section-light">
+    <div class="container">
+      <h2 style="text-align: center; margin-bottom: 3rem;">További információk</h2>
+      <div class="grid grid-3">
+        <div class="info-card">
+          <div class="info-icon">⏰</div>
+          <h4>Nyitvatartás</h4>
+          <div class="hours-list">
+            <div class="hours-item">
+              <span>Hétfő - Péntek</span>
+              <span>09:00 - 14:30</span>
+            </div>
+            <div class="hours-item weekend">
+              <span>Szombat - Vasárnap</span>
+              <span>Zárva</span>
+            </div>
+          </div>
+          <small>Személyes látogatás előzetes egyeztetéssel</small>
+        </div>
+
+        <div class="info-card">
+          <div class="info-icon">📋</div>
+          <h4>Gyakori kérdések</h4>
+          <p>Az összes fontos információ a szolgáltatásainkról és szerződési feltételeinkről.</p>
+          <a href="/gyik" class="info-link">GYIK megtekintése →</a>
+        </div>
+
+        <div class="info-card">
+          <div class="info-icon">🏆</div>
+          <h4>Miért mi?</h4>
+          <p>Tudja meg, mi tesz minket különlegessé a székhelyszolgáltatók között!</p>
+          <a href="/miert-valasszon-minket" class="info-link">Előnyeink →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA -->
+  <section class="section" style="background: var(--primary-blue); color: white;">
+    <div class="container" style="text-align: center;">
+      <h2 style="color: white; margin-bottom: 1rem;">Készen áll a kezdésre?</h2>
+      <p style="font-size: 1.2rem; margin-bottom: 2rem;">
+        Csatlakozzon több mint 500 elégedett ügyfélünkhöz még ma!
+      </p>
+      <div class="final-cta-buttons">
+        <a href="https://szekhelyszolgalat.net/index.html#content4-26" class="btn" style="background: white; color: var(--primary-blue); margin: 0.5rem; font-weight: 700;" target="_blank">
+          Szerződés kötése most
+        </a>
+        <a href="tel:+36703971095" class="btn btn-secondary" style="border-color: white; color: white; margin: 0.5rem;">
+          Telefonos konzultáció
+        </a>
+      </div>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .contact-details {
+    padding-right: 2rem;
+  }
+
+  .contact-details h2 {
+    color: var(--primary-blue);
+    margin-bottom: 2rem;
+  }
+
+  .contact-item {
+    display: flex;
+    align-items: start;
+    gap: 1.5rem;
+    margin-bottom: 2.5rem;
+    padding: 1.5rem;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.08);
+  }
+
+  .contact-item-icon {
+    font-size: 2.5rem;
+    background: var(--light-blue);
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  .contact-item-content h4 {
+    color: var(--primary-blue);
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+  }
+
+  .contact-item-content p {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+  }
+
+  .contact-item-content a {
+    color: var(--primary-blue);
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+  .contact-item-content a:hover {
+    text-decoration: underline;
+  }
+
+  .contact-item-content small {
+    color: var(--text-light);
+    font-size: 0.85rem;
+  }
+
+  .quick-actions {
+    margin-top: 3rem;
+    background: var(--light-blue);
+    padding: 2rem;
+    border-radius: 15px;
+  }
+
+  .quick-actions h3 {
+    color: var(--primary-blue);
+    margin-bottom: 1.5rem;
+  }
+
+  .action-buttons {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+  }
+
+  .location-info h3 {
+    color: var(--primary-blue);
+    margin-bottom: 1.5rem;
+  }
+
+  .location-card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  }
+
+  .map-placeholder {
+    background: var(--light-blue);
+    padding: 2rem;
+    text-align: center;
+  }
+
+  .map-placeholder h4 {
+    color: var(--primary-blue);
+    margin-bottom: 0.5rem;
+  }
+
+  .transport-info {
+    padding: 2rem;
+  }
+
+  .transport-info h4 {
+    color: var(--primary-blue);
+    margin-bottom: 1rem;
+  }
+
+  .transport-options {
+    margin-bottom: 2rem;
+  }
+
+  .transport-item {
+    display: flex;
+    align-items: start;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    padding: 0.75rem;
+    background: var(--gray-light);
+    border-radius: 8px;
+  }
+
+  .transport-icon {
+    font-size: 1.5rem;
+    background: var(--primary-blue);
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  .parking-info {
+    background: var(--light-blue);
+    padding: 1.5rem;
+    border-radius: 10px;
+  }
+
+  .parking-info h4 {
+    color: var(--primary-blue);
+    margin-bottom: 0.5rem;
+  }
+
+  .info-card {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    text-align: center;
+  }
+
+  .info-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    display: block;
+  }
+
+  .info-card h4 {
+    color: var(--primary-blue);
+    margin-bottom: 1rem;
+  }
+
+  .hours-list {
+    margin: 1.5rem 0;
+  }
+
+  .hours-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #eee;
+  }
+
+  .hours-item:last-child {
+    border-bottom: none;
+  }
+
+  .hours-item.weekend {
+    opacity: 0.6;
+  }
+
+  .info-link {
+    color: var(--primary-blue);
+    text-decoration: none;
+    font-weight: 600;
+    margin-top: 1rem;
+    display: inline-block;
+  }
+
+  .info-link:hover {
+    text-decoration: underline;
+  }
+
+  .final-cta-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  @media (max-width: 768px) {
+    .contact-details {
+      padding-right: 0;
+      margin-bottom: 3rem;
+    }
+
+    .contact-item {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .contact-item-icon {
+      margin: 0 auto;
+    }
+
+    .action-buttons {
+      gap: 0.5rem;
+    }
+
+    .transport-item {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .transport-icon {
+      margin: 0 auto;
+    }
+
+    .final-cta-buttons {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+</style>

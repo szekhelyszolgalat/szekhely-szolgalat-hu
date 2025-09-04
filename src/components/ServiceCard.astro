@@ -1,0 +1,54 @@
+---
+export interface Props {
+  title: string;
+  features: string[];
+  highlight?: boolean;
+}
+
+const { title, features, highlight = false } = Astro.props;
+---
+
+<div class:list={["card", { "highlight": highlight }]}>
+  <h3>{title}</h3>
+  <ul class="feature-list">
+    {features.map(feature => (
+      <li>{feature}</li>
+    ))}
+  </ul>
+  <div class="card-footer">
+    <a href="https://szekhelyszolgalat.net/arak-csomagok" class="btn btn-secondary" target="_blank">
+      Árak megtekintése
+    </a>
+  </div>
+</div>
+
+<style>
+  .card.highlight {
+    border: 2px solid var(--primary-blue);
+    transform: scale(1.05);
+  }
+  
+  .feature-list {
+    list-style: none;
+    margin: 1.5rem 0;
+  }
+  
+  .feature-list li {
+    padding: 0.5rem 0;
+    position: relative;
+    padding-left: 1.5rem;
+  }
+  
+  .feature-list li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--primary-blue);
+    font-weight: bold;
+  }
+  
+  .card-footer {
+    margin-top: auto;
+    padding-top: 1rem;
+  }
+</style>

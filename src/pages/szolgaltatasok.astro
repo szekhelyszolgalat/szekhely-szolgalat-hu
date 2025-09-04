@@ -1,0 +1,174 @@
+---
+import Layout from '../components/Layout.astro';
+import ServiceCard from '../components/ServiceCard.astro';
+---
+
+<Layout 
+  title="Szolgáltatásaink - Professzionális Székhelyszolgáltatás"
+  description="Részletes áttekintés székhelyszolgáltatási csomagjainkról: alap, standard, bővített és prémium csomagok minden vállalkozási igényhez."
+  keywords="székhelyszolgáltatás csomagok, postakezelés szolgáltatás, dokumentum szkennelés, online szerződéskezelés"
+>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <h1>Szolgáltatásaink</h1>
+      <p>Válassza ki az Önnek megfelelő csomagot rugalmas és megbízható szolgáltatásaink közül</p>
+    </div>
+  </section>
+
+  <!-- Service Packages -->
+  <section class="section">
+    <div class="container">
+      <div class="grid grid-2">
+        <ServiceCard
+          title="Alap Csomag"
+          features={[
+            "Hivatalos levelek átvétele",
+            "Postai küldemények továbbítása",
+            "E-mail értesítés új levelekről",
+            "Telefonos ügyfélszolgálat munkanapokon",
+            "Alapvető postakezelési szolgáltatások"
+          ]}
+        />
+        <ServiceCard
+          title="Standard Csomag"
+          features={[
+            "Minden alapszolgáltatás",
+            "Dokumentumok szkennelése PDF formátumban",
+            "Online hozzáférés dokumentumokhoz",
+            "Prioritás ügyfélszolgálat",
+            "Szerződések és hivatalos iratok kezelése",
+            "Havi összefoglaló jelentés"
+          ]}
+          highlight={true}
+        />
+        <ServiceCard
+          title="Bővített Csomag"
+          features={[
+            "Minden standard szolgáltatás",
+            "Expressz postakezelés (24 órán belül)",
+            "Részletes havi és negyedéves jelentések",
+            "Személyes ügyfélkapcsolat manager",
+            "Alapvető jogi tanácsadás",
+            "Üzleti regisztrációs támogatás"
+          ]}
+        />
+        <ServiceCard
+          title="Prémium Csomag"
+          features={[
+            "Minden bővített szolgáltatás",
+            "VIP ügyfélszolgálat (telefon + email)",
+            "Teljes körű adminisztratív támogatás",
+            "Nemzetközi postakezelés és továbbítás",
+            "Személyes asszisztens szolgáltatás",
+            "Jogi konzultáció szakértőinkkel"
+          ]}
+        />
+      </div>
+    </div>
+  </section>
+
+  <!-- Service Details -->
+  <section class="section section-light">
+    <div class="container">
+      <h2 style="text-align: center; margin-bottom: 3rem;">Szolgáltatásaink részletesen</h2>
+      <div class="grid grid-3">
+        <div class="card">
+          <h4>📬 Postakezelés</h4>
+          <p>Teljes körű postakezelés: levelek átvétele, rendszerezése, szkennelése és továbbítása. Minden fontos küldeményt biztonságban kezelünk.</p>
+        </div>
+        <div class="card">
+          <h4>📱 Digitalizálás</h4>
+          <p>Modern dokumentumkezelés: szkennelés, digitális archiválás, online hozzáférés. Bárhonnan, bármikor elérheti dokumentumait.</p>
+        </div>
+        <div class="card">
+          <h4>📞 Ügyfélszolgálat</h4>
+          <p>Személyes kapcsolattartás: telefonos és e-mailes támogatás, gyors válaszadás, szakszerű ügyintézés minden kérdésben.</p>
+        </div>
+        <div class="card">
+          <h4>⚡ Gyors értesítés</h4>
+          <p>Azonnali tájékoztatás: e-mail és SMS értesítések új levelek érkezéséről, fontos határidőkről és adminisztratív teendőkről.</p>
+        </div>
+        <div class="card">
+          <h4>🔐 Biztonság</h4>
+          <p>Maximális védelem: titkosított kommunikáció, biztonságos dokumentumtárolás, GDPR megfelelőség minden adatkezelési folyamatban.</p>
+        </div>
+        <div class="card">
+          <h4>🌍 Online hozzáférés</h4>
+          <p>Modern technológia: webes ügyfélportál, mobil alkalmazás, 24/7 online hozzáférés dokumentumaihoz és szolgáltatásainkhoz.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Our Services -->
+  <section class="section">
+    <div class="container">
+      <h2 style="text-align: center; margin-bottom: 3rem;">Miért válassza szolgáltatásainkat?</h2>
+      <div class="grid grid-2" style="align-items: center;">
+        <div>
+          <div class="benefit-list">
+            <div class="benefit-item">
+              <h4>✅ 10 éves tapasztalat</h4>
+              <p>Egy évtized alatt szerzett szakértelem és megbízhatóság a székhelyszolgáltatás területén.</p>
+            </div>
+            <div class="benefit-item">
+              <h4>✅ Pénzvisszafizetési garancia</h4>
+              <p>Egyedülálló garancia az iparágban - ha nem elégedett, visszafizetjük a díjat.</p>
+            </div>
+            <div class="benefit-item">
+              <h4>✅ Rugalmas szerződések</h4>
+              <p>Nincs kötöttség, bármikor lemondható szolgáltatás, átlátható feltételek.</p>
+            </div>
+            <div class="benefit-item">
+              <h4>✅ V. kerületi presztízs</h4>
+              <p>Budapest legrangosabb kerületében található irodánk kiváló referenciát jelent.</p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="highlight-box">
+            <h3>Kezdje el még ma!</h3>
+            <p>Csatlakozzon több mint 500 elégedett ügyfélünkhöz, és tapasztalja meg professzionális szolgáltatásaink előnyeit.</p>
+            <div style="margin-top: 2rem;">
+              <a href="https://szekhelyszolgalat.net/index.html#content4-26" class="btn btn-primary" target="_blank" style="display: block; text-align: center; margin-bottom: 1rem;">
+                Szerződés kötése
+              </a>
+              <a href="/kapcsolat" class="btn btn-secondary" style="display: block; text-align: center;">
+                Ingyenes konzultáció
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .benefit-list {
+    margin: 2rem 0;
+  }
+
+  .benefit-item {
+    margin-bottom: 2rem;
+  }
+
+  .benefit-item h4 {
+    color: var(--primary-blue);
+    margin-bottom: 0.5rem;
+  }
+
+  .highlight-box {
+    background: linear-gradient(135deg, var(--light-blue) 0%, var(--white) 100%);
+    padding: 3rem;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+  }
+
+  .highlight-box h3 {
+    color: var(--primary-blue);
+    margin-bottom: 1rem;
+  }
+</style>

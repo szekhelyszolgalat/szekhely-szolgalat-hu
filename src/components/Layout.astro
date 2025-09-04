@@ -1,0 +1,139 @@
+---
+export interface Props {
+  title: string;
+  description?: string;
+  keywords?: string;
+}
+
+const { title, description = "Megbízható székhelyszolgáltatás Budapest szívében - 10 év tapasztalat, pénzvisszafizetési garancia", keywords = "székhelyszolgáltatás budapest, székhelyszolgáltatás 5. kerület, székhelyszolgáltató belváros" } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{title} | SzékhelySzolgálat Budapest</title>
+  <meta name="description" content={description}>
+  <meta name="keywords" content={keywords}>
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content={title}>
+  <meta property="og:description" content={description}>
+  <meta property="og:locale" content="hu_HU">
+  
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content={title}>
+  <meta name="twitter:description" content={description}>
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="/src/styles/main.css">
+  
+  <!-- Schema.org structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Székhely-Szolgálat Budapest",
+    "description": "Modern székhelyszolgáltatás budapesti vállalkozóknak - digitális megoldások, gyors ügyintézés",
+    "url": "https://szekhelyszolgalat.net",
+    "telephone": "+36 70 397 1095",
+    "email": "titkarsag@szekhelyszolgalat.net",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Honvéd utca 8., 1. emelet 2.",
+      "addressLocality": "Budapest",
+      "postalCode": "1054",
+      "addressCountry": "HU"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 47.503,
+      "longitude": 19.051
+    },
+    "openingHours": "Mo-Fr 09:00-14:30",
+    "serviceType": "Székhelyszolgáltatás",
+    "areaServed": "Budapest"
+  }
+  </script>
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header-content">
+        <a href="/" class="logo">
+          <div class="logo-icon">🏢</div>
+          Székhely-Szolgálat
+        </a>
+        <nav>
+          <ul class="nav">
+            <li><a href="/">Főoldal</a></li>
+            <li><a href="/szolgaltatasok">Szolgáltatások</a></li>
+            <li><a href="/miert-valasszon-minket">Miért mi?</a></li>
+            <li><a href="/v-keruleti-elonyok">V. kerületi előnyök</a></li>
+            <li><a href="/gyik">GYIK</a></li>
+            <li><a href="/kapcsolat">Kapcsolat</a></li>
+          </ul>
+        </nav>
+        <a href="https://szekhelyszolgalat.net/index.html#content4-26" class="btn btn-primary" target="_blank">
+          Szerződés kötése
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <slot />
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div>
+          <h4>Székhely-Szolgálat Budapest</h4>
+          <p>Modern digitális megoldások<br>budapesti vállalkozóknak</p>
+          <div class="trust-badge">Pénzvisszafizetési garancia</div>
+        </div>
+        <div>
+          <h4>Elérhetőség</h4>
+          <p>
+            1054 Budapest, Honvéd utca 8.<br>
+            1. emelet 2.<br>
+            <a href="tel:+36703971095">+36 70 397 1095</a><br>
+            <a href="mailto:titkarsag@szekhelyszolgalat.net">titkarsag@szekhelyszolgalat.net</a>
+          </p>
+        </div>
+        <div>
+          <h4>Nyitvatartás</h4>
+          <p>
+            Hétfő - Péntek<br>
+            09:00 - 14:30
+          </p>
+        </div>
+        <div>
+          <h4>Szolgáltatások</h4>
+          <p>
+            • Postakezelés és továbbítás<br>
+            • Dokumentum szkennelés<br>
+            • Online szerződéskezelés<br>
+            • Azonnali értesítések
+          </p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; {new Date().getFullYear()} Székhely-Szolgálat Budapest | Szolgáltatás: SzékhelySzolgálat.Net Kft.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
