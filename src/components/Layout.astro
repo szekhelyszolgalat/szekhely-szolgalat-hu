@@ -71,18 +71,18 @@ const { title, description = "Megbízható székhelyszolgáltatás Budapest szí
   <header class="header">
     <div class="container">
       <div class="header-content">
-        <a href="/" class="logo">
+        <a href={import.meta.env.BASE_URL} class="logo">
           <div class="logo-icon">🏢</div>
           Székhely-Szolgálat
         </a>
         <nav>
           <ul class="nav">
-            <li><a href="/">Főoldal</a></li>
-            <li><a href="/szolgaltatasok">Szolgáltatások</a></li>
-            <li><a href="/miert-valasszon-minket">Miért mi?</a></li>
-            <li><a href="/v-keruleti-elonyok">V. kerületi előnyök</a></li>
-            <li><a href="/gyik">GYIK</a></li>
-            <li><a href="/kapcsolat">Kapcsolat</a></li>
+            <li><a href={import.meta.env.BASE_URL}>Főoldal</a></li>
+            <li><a href={`${import.meta.env.BASE_URL}szolgaltatasok/`}>Szolgáltatások</a></li>
+            <li><a href={`${import.meta.env.BASE_URL}miert-valasszon-minket/`}>Miért mi?</a></li>
+            <li><a href={`${import.meta.env.BASE_URL}v-keruleti-elonyok/`}>V. kerületi előnyök</a></li>
+            <li><a href={`${import.meta.env.BASE_URL}gyik/`}>GYIK</a></li>
+            <li><a href={`${import.meta.env.BASE_URL}kapcsolat/`}>Kapcsolat</a></li>
           </ul>
         </nav>
         <a href="https://szekhelyszolgalat.net/index.html#content4-26" class="btn btn-primary" target="_blank">
