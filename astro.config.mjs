@@ -21,6 +21,7 @@ if (isBuild) {
 export default defineConfig({
   server: { port: SERVER_PORT },
   site: BASE_URL,
+  base: isBuild ? '/szekhely-szolgalat-hu/' : undefined,
   output: 'static',
 
   build: {
