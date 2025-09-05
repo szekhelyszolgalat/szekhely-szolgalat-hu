@@ -5,8 +5,8 @@ import sitemap from '@astrojs/sitemap';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://szekhelyszolgalat.github.io/szekhely-szolgalat-hu',
-  base: '/',
+  site: 'https://szekhelyszolgalat.github.io',
+  base: '/szekhely-szolgalat-hu',
   output: 'static',
 
   build: {
